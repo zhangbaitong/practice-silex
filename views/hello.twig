@@ -1,0 +1,12 @@
+<html>
+<body>
+
+{{ path('homepage') }}
+{{ url('homepage') }} {# generates the absolute url http://example.org/ #}
+{{ path('hello', {name: 'Fabien'}) }}
+{{ url('hello', {name: 'Fabien'}) }} {# generates the absolute url http://example.org/hello/Fabien #}
+{{ pi }}
+{{ profile }}
+{{ render(url('homepage')) }}
+</body>
+</html>
